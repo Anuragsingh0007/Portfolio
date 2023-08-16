@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio by | Anurag Singh</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ------------------------Navbar Section------------------------->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/anurag logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hi, I'm <span>Anurag</span><br>From Uttar Pradesh</h1>
+            </div>
+        </div>
+<!-- -------------------About Section----------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Passport_size_pic-removebg-preview.png">
+                    </div>     
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About me</h1>
+                        <p>
+                            Hi ! My Name is Anurag Singh and i'm 21 years old. I am pursuing Bachelor of Art form Resmi Degree Collage (Doharighat ,  Mau). After I complete my Bachelor Degree I'm going to do BCA : Bachelor of Computer Application DS And AI form Lucknow. That's all about my Education Thank You so much to read this... 
+                        </p>
+
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><Span>Developer</Span><br>Website Developer / App Developer</li>
+                                <li><Span>Editor</Span><br>Video & Photo Editor</li>
+                                <li><Span>Videographer</Span><br>Cinematographer / Videographer / Photographer</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><Span>2018-2023 Current</Span><br>Video & Photo Editor</li>
+                                <li><Span>2023</Span><br>HTML / CSS Knowledge</li>
+                                <li><Span>2017-2023</Span><br>Youtuber / Instagram / Money Managment</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><Span>2018</Span><br>I passed 10th in 2018</li>
+                                <li><Span>2021</Span><br>I passed 12th & B.A in 2021</li>
+                                <li><Span>2023</Span><br>I'm doing to BCA DS & AI</li>
+                            </ul>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname) {
+        for(tablink of tablinks){
+            tablink.classlist.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classlist.remove("active-tab")
+        }
+    }
+
+</script>
+
+
+</body>
+</html> 

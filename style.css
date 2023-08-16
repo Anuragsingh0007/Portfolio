@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080808;
+    color: #ffff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(Lion\ colorized\ \(black\ &\ white\ version\ in\ comments\)\ [1920x1080].jpg);
+    background-size: cover;  
+}
+
+.container {
+    padding: 15px 8% 10% 5% ;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 200px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 28px;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffff;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 4px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.header-text {
+    margin-top: 13%;
+    font-size: 23px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 5px;
+}
+
+.header-text h1 span {
+    color: #ff0051;
+}
+
+/* ------------------------About Section-------------------- */
+#about {
+    padding: 130px 0px;
+    color: #dddddd;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-col-1 {
+    flex-basis: 40%;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-2 {
+    flex-basis: 55%;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.about-col-1 img:hover {
+    box-shadow: 0px 0px 50px #ffffff35;
+    transition: all ease 0.3;
+}
+
+.about-col-2 p {
+    flex-wrap: wrap;
+}
+
+.tab-title {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position:relative;
+}
+
+.tab-links::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.4s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #ff0051;
+    font-size: 16px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
